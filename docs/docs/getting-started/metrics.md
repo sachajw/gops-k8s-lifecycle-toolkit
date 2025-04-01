@@ -14,7 +14,7 @@ such as whether a rollout is good, or whether to scale up or down.
 
 Your observability data may come
 from multiple observability solutions --
-Prometheus, Thanos, Cortex, Dynatrace, Datadog and others --
+Prometheus, Thanos, Cortex, Dynatrace, Datadog, Elastic and others --
 or may be data that comes directly
 from your cloud provider such as AWS, Google, or Azure.
 The Keptn Metrics Server unifies and standardizes access to all this data.
@@ -88,6 +88,15 @@ follow the instructions in [Installation](../installation/index.md).
 
      For more details about how to install Keptn, see the
      [Installation Guide](../installation/index.md).
+
+      > **Note** If you are installing Keptn on a cluster that has an existing
+      [custom metrics API](https://kubernetes.io/docs/reference/external-api/custom-metrics.v1beta2/)
+      defined, you must first set `customMetricsAPIService.enabled` helm value to `false`
+      to avoid Keptn installing its own custom metrics API.
+
+      ```shell
+      helm upgrade --install keptn keptn/keptn -n keptn-system --create-namespace --wait --set metricsOperator.customMetricsAPIService.enabled=false
+      ```
 
 ### Expose Prometheus and get an existing metric
 

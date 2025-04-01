@@ -1,5 +1,143 @@
 # Changelog
 
+## [2.0.0](https://github.com/keptn/lifecycle-toolkit/compare/lifecycle-operator-v1.2.0...lifecycle-operator-v2.0.0) (2024-11-11)
+
+
+### ⚠ BREAKING CHANGES
+
+* The Keptn Scheduler was removed and therefore support for Kubernetes 1.26 and lower was dropped.
+* remove Keptn scheduler ([#3821](https://github.com/keptn/lifecycle-toolkit/issues/3821))
+
+### Other
+
+* polish helm charts ([#3853](https://github.com/keptn/lifecycle-toolkit/issues/3853)) ([17fa47b](https://github.com/keptn/lifecycle-toolkit/commit/17fa47b16fb43bb627a466e999851bc1f225e878))
+* remove Keptn scheduler ([#3821](https://github.com/keptn/lifecycle-toolkit/issues/3821)) ([de3a0e7](https://github.com/keptn/lifecycle-toolkit/commit/de3a0e7a17c8c16ab350188d5235ca6b435c6ba5))
+
+
+### Docs
+
+* remove Keptn scheduler ([#3826](https://github.com/keptn/lifecycle-toolkit/issues/3826)) ([cb01b09](https://github.com/keptn/lifecycle-toolkit/commit/cb01b09ec5ec079595e5d64de70c541b432f4de0))
+
+
+### Dependency Updates
+
+* bump umbrella chart dependencies ([#3816](https://github.com/keptn/lifecycle-toolkit/issues/3816)) ([302150a](https://github.com/keptn/lifecycle-toolkit/commit/302150a60b07c88d9d1fe6412dfb91f89fb36c7f))
+* **lifecycle-operator:** bump python and deno runtime images ([#3852](https://github.com/keptn/lifecycle-toolkit/issues/3852)) ([140498b](https://github.com/keptn/lifecycle-toolkit/commit/140498ba922640ee76d8a8a7330056e721eb8193))
+* update github.com/keptn/lifecycle-toolkit/keptn-cert-manager digest to 17fa47b ([#3838](https://github.com/keptn/lifecycle-toolkit/issues/3838)) ([c8d56cd](https://github.com/keptn/lifecycle-toolkit/commit/c8d56cdacacc2730b6454377cec54e04a47853cd))
+* update golang docker tag to v1.23.3 ([#3847](https://github.com/keptn/lifecycle-toolkit/issues/3847)) ([a200b38](https://github.com/keptn/lifecycle-toolkit/commit/a200b38e5c4f1b4d024e50585d68410f8ceba446))
+* update module github.com/onsi/ginkgo/v2 to v2.21.0 ([#3834](https://github.com/keptn/lifecycle-toolkit/issues/3834)) ([cbd00cb](https://github.com/keptn/lifecycle-toolkit/commit/cbd00cb6a02c00dffc6961663910d27b717d16d8))
+* update module github.com/onsi/gomega to v1.35.1 ([#3810](https://github.com/keptn/lifecycle-toolkit/issues/3810)) ([cada033](https://github.com/keptn/lifecycle-toolkit/commit/cada033a016569688be95a29269ecfa1688504cc))
+* update module github.com/prometheus/client_golang to v1.20.5 ([#3809](https://github.com/keptn/lifecycle-toolkit/issues/3809)) ([3d72aa0](https://github.com/keptn/lifecycle-toolkit/commit/3d72aa0589ca76251109110390d91dd9f44f3343))
+* update module google.golang.org/grpc to v1.68.0 ([#3850](https://github.com/keptn/lifecycle-toolkit/issues/3850)) ([776ec29](https://github.com/keptn/lifecycle-toolkit/commit/776ec298d1e882d2efd9bcf0aedef340299300d8))
+
+## [1.2.0](https://github.com/keptn/lifecycle-toolkit/compare/lifecycle-operator-v1.1.1...lifecycle-operator-v1.2.0) (2024-10-31)
+
+
+### Features
+
+* add support for Kubernetes v1.31 ([#3785](https://github.com/keptn/lifecycle-toolkit/issues/3785)) ([2c5ba22](https://github.com/keptn/lifecycle-toolkit/commit/2c5ba22537e6e583c631aff78eca9b737c6bd69f))
+
+
+### Other
+
+* bump runtime versions ([#3813](https://github.com/keptn/lifecycle-toolkit/issues/3813)) ([e03976d](https://github.com/keptn/lifecycle-toolkit/commit/e03976d1e2a7f8e28f1a107d0a8b44b615764f40))
+* release scheduler 1.0.2 ([#3709](https://github.com/keptn/lifecycle-toolkit/issues/3709)) ([8bf4406](https://github.com/keptn/lifecycle-toolkit/commit/8bf4406c5ad236558781773ad7ebafcc2cc937ed))
+* update helm chart versions ([#3713](https://github.com/keptn/lifecycle-toolkit/issues/3713)) ([e052c92](https://github.com/keptn/lifecycle-toolkit/commit/e052c927cdb83215dfc2724e259f8fd72988a0a2))
+
+
+### Dependency Updates
+
+* update all golang.org/x packages ([#3729](https://github.com/keptn/lifecycle-toolkit/issues/3729)) ([d0a22de](https://github.com/keptn/lifecycle-toolkit/commit/d0a22deacb3af85c95e07c9b4d2d91120b7c07ca))
+* update all golang.org/x packages ([#3754](https://github.com/keptn/lifecycle-toolkit/issues/3754)) ([736a4ac](https://github.com/keptn/lifecycle-toolkit/commit/736a4ac129b8f81a17e609090efadc6b1bc10939))
+* update dependency kubernetes-sigs/controller-tools to v0.16.2 ([#3700](https://github.com/keptn/lifecycle-toolkit/issues/3700)) ([a0ff0ed](https://github.com/keptn/lifecycle-toolkit/commit/a0ff0ed8eccb9ef0da275f5a1bcce010d058ad7c))
+* update dependency kubernetes-sigs/controller-tools to v0.16.4 ([#3733](https://github.com/keptn/lifecycle-toolkit/issues/3733)) ([a3dca53](https://github.com/keptn/lifecycle-toolkit/commit/a3dca534108788fb47c73e21a48f791070fddb31))
+* update dependency kubernetes-sigs/controller-tools to v0.16.5 ([#3781](https://github.com/keptn/lifecycle-toolkit/issues/3781)) ([9e742e8](https://github.com/keptn/lifecycle-toolkit/commit/9e742e8975a45103d7f33929e442ed70e84ac7c3))
+* update dependency kubernetes-sigs/kustomize to v5.5.0 ([#3793](https://github.com/keptn/lifecycle-toolkit/issues/3793)) ([62ff5ac](https://github.com/keptn/lifecycle-toolkit/commit/62ff5ac84966ab3dcbf1a640133a47e7301479bd))
+* update github.com/keptn/lifecycle-toolkit/keptn-cert-manager digest to 8c76404 ([#3685](https://github.com/keptn/lifecycle-toolkit/issues/3685)) ([053a574](https://github.com/keptn/lifecycle-toolkit/commit/053a574ce7618a9b732ed946be5bc50c7d6c5b4d))
+* update golang docker tag to v1.23.0 ([#3702](https://github.com/keptn/lifecycle-toolkit/issues/3702)) ([a4d7328](https://github.com/keptn/lifecycle-toolkit/commit/a4d73287d793bdd4681d5e8ba9fe56d185705b80))
+* update golang docker tag to v1.23.1 ([#3732](https://github.com/keptn/lifecycle-toolkit/issues/3732)) ([8eb878f](https://github.com/keptn/lifecycle-toolkit/commit/8eb878f908467ab9a7140694d263de0fc352f2dd))
+* update golang docker tag to v1.23.2 ([#3758](https://github.com/keptn/lifecycle-toolkit/issues/3758)) ([37a3f51](https://github.com/keptn/lifecycle-toolkit/commit/37a3f512da9ecd8eb8cf1dcb339647e9872e0b7e))
+* update kubebuilder and k8s packages ([#3806](https://github.com/keptn/lifecycle-toolkit/issues/3806)) ([7b92373](https://github.com/keptn/lifecycle-toolkit/commit/7b92373b2110c28dec82d576747f821d47a98bb2))
+* update kubernetes packages to v0.29.9 (patch) ([#3735](https://github.com/keptn/lifecycle-toolkit/issues/3735)) ([fcb3242](https://github.com/keptn/lifecycle-toolkit/commit/fcb3242218302ee406cdb10407e020b4ee516588))
+* update module github.com/onsi/ginkgo/v2 to v2.20.2 ([#3724](https://github.com/keptn/lifecycle-toolkit/issues/3724)) ([7d62fad](https://github.com/keptn/lifecycle-toolkit/commit/7d62fadadbd251debe2b2c0c46a9042538a70c71))
+* update module google.golang.org/grpc to v1.67.1 ([#3796](https://github.com/keptn/lifecycle-toolkit/issues/3796)) ([2902073](https://github.com/keptn/lifecycle-toolkit/commit/2902073b1fe0bee77d8f7af2b40fc49d0e183cbb))
+* update module google.golang.org/protobuf to v1.35.1 ([#3797](https://github.com/keptn/lifecycle-toolkit/issues/3797)) ([2c5f1b3](https://github.com/keptn/lifecycle-toolkit/commit/2c5f1b310f34609dddb602059cbcca35c672ca6f))
+* update opentelemetry-go monorepo (minor) ([#3798](https://github.com/keptn/lifecycle-toolkit/issues/3798)) ([878fa47](https://github.com/keptn/lifecycle-toolkit/commit/878fa47ce3f3c4a2fb6863169c13c408bc266d61))
+
+## [1.1.1](https://github.com/keptn/lifecycle-toolkit/compare/lifecycle-operator-v1.1.0...lifecycle-operator-v1.1.1) (2024-08-27)
+
+
+### Bug Fixes
+
+* **lifecycle-operator:** update ownerReference when updating KeptnWorkload ([#3683](https://github.com/keptn/lifecycle-toolkit/issues/3683)) ([de2c441](https://github.com/keptn/lifecycle-toolkit/commit/de2c4412021b0aff8f2276830205f7fab1586c41))
+
+
+### Other
+
+* backport helm chart versions ([#3662](https://github.com/keptn/lifecycle-toolkit/issues/3662)) ([81320a5](https://github.com/keptn/lifecycle-toolkit/commit/81320a534f52cf16d3e59c76b451c92b3502b35f))
+
+
+### Dependency Updates
+
+* update all golang.org/x packages ([#3708](https://github.com/keptn/lifecycle-toolkit/issues/3708)) ([1014268](https://github.com/keptn/lifecycle-toolkit/commit/1014268f72066049bd707373feea367f680d0132))
+* update golang docker tag to v1.22.6 ([#3692](https://github.com/keptn/lifecycle-toolkit/issues/3692)) ([73b30ee](https://github.com/keptn/lifecycle-toolkit/commit/73b30ee6a0748535d8af1160a7c0b8e2f2c04ec2))
+* update kubernetes packages to v0.29.8 (patch) ([#3693](https://github.com/keptn/lifecycle-toolkit/issues/3693)) ([7ca1250](https://github.com/keptn/lifecycle-toolkit/commit/7ca12502889b1b74431a3210039299b620d37c3f))
+* update module dario.cat/mergo to v1.0.1 ([#3694](https://github.com/keptn/lifecycle-toolkit/issues/3694)) ([80d8e9d](https://github.com/keptn/lifecycle-toolkit/commit/80d8e9de846adef30c5061c4e16e82698069b890))
+* update module github.com/argoproj/argo-rollouts to v1.7.2 ([#3695](https://github.com/keptn/lifecycle-toolkit/issues/3695)) ([e0445d9](https://github.com/keptn/lifecycle-toolkit/commit/e0445d9d76d5589a7ae711e8d0dbfe617a7cb20c))
+* update module github.com/onsi/ginkgo/v2 to v2.20.1 ([#3704](https://github.com/keptn/lifecycle-toolkit/issues/3704)) ([df11440](https://github.com/keptn/lifecycle-toolkit/commit/df1144084e337c8eda64e2635b8ee534fd10252f))
+
+## [1.1.0](https://github.com/keptn/lifecycle-toolkit/compare/lifecycle-operator-v1.0.0...lifecycle-operator-v1.1.0) (2024-08-06)
+
+
+### Features
+
+* **helm-chart:** ability to set hostNetwork for lifecycle operator deployment ([#3500](https://github.com/keptn/lifecycle-toolkit/issues/3500)) ([c08bb07](https://github.com/keptn/lifecycle-toolkit/commit/c08bb07f9e59c6488062e76d09ff9dcff4311102))
+* **lifecycle-operator:** introduce RestApiEnabled parameter in KeptnConfig ([#3620](https://github.com/keptn/lifecycle-toolkit/issues/3620)) ([1ab1f14](https://github.com/keptn/lifecycle-toolkit/commit/1ab1f14c290b0edbb473c33620a25e5ca706cb74))
+
+
+### Other
+
+* backport release helm chart versions ([#3460](https://github.com/keptn/lifecycle-toolkit/issues/3460)) ([95d6809](https://github.com/keptn/lifecycle-toolkit/commit/95d6809272eeb2b981b63f3718c4e799fc72b743))
+* introduce unit test for non-blocking lifecycle operator mode ([#3581](https://github.com/keptn/lifecycle-toolkit/issues/3581)) ([d62f4ea](https://github.com/keptn/lifecycle-toolkit/commit/d62f4eaea739c97dcd5bcc70d3078bf77af2190e))
+
+
+### Dependency Updates
+
+* bump keptn-cert-manager to latest version ([#3659](https://github.com/keptn/lifecycle-toolkit/issues/3659)) ([82bfb2b](https://github.com/keptn/lifecycle-toolkit/commit/82bfb2bfd36e61df37f91bf0565762d443a60d45))
+* update dependency golangci/golangci-lint to v1.59.1 ([#3631](https://github.com/keptn/lifecycle-toolkit/issues/3631)) ([29c7c1c](https://github.com/keptn/lifecycle-toolkit/commit/29c7c1cdab7ca4d95fd89622fc07f50d557c9e9c))
+* update dependency kubernetes-sigs/controller-tools to v0.15.0 ([#3473](https://github.com/keptn/lifecycle-toolkit/issues/3473)) ([8987cd1](https://github.com/keptn/lifecycle-toolkit/commit/8987cd1773ba2e90e941e87caece0020b1100a18))
+* update dependency kubernetes-sigs/kustomize to v5.4.2 ([#3548](https://github.com/keptn/lifecycle-toolkit/issues/3548)) ([fdecc9b](https://github.com/keptn/lifecycle-toolkit/commit/fdecc9b44c52a69407310dd85240b355a6b56c6e))
+* update dependency kubernetes-sigs/kustomize to v5.4.3 ([#3617](https://github.com/keptn/lifecycle-toolkit/issues/3617)) ([8e583ab](https://github.com/keptn/lifecycle-toolkit/commit/8e583ab22897eb8039c4038d0f85081c0f1a3a79))
+* update golang docker tag to v1.21.10 ([#3508](https://github.com/keptn/lifecycle-toolkit/issues/3508)) ([ed3409f](https://github.com/keptn/lifecycle-toolkit/commit/ed3409f1fa0f309e1fb0b1d971ec56e0c8f854bb))
+* update golang docker tag to v1.21.11 ([#3552](https://github.com/keptn/lifecycle-toolkit/issues/3552)) ([6fdf850](https://github.com/keptn/lifecycle-toolkit/commit/6fdf8503c179264b1428d13dc00717cb2eb9d589))
+* update golang docker tag to v1.21.12 ([#3604](https://github.com/keptn/lifecycle-toolkit/issues/3604)) ([0838454](https://github.com/keptn/lifecycle-toolkit/commit/083845486d2b5a94d75b49afbd1093c68b1d4523))
+* update golang docker tag to v1.22.5 ([#3315](https://github.com/keptn/lifecycle-toolkit/issues/3315)) ([0d7a613](https://github.com/keptn/lifecycle-toolkit/commit/0d7a613997697ba4db937f5e6193bc23c6b34551))
+* update golang.org/x/exp digest to 7f521ea ([#3551](https://github.com/keptn/lifecycle-toolkit/issues/3551)) ([4fcf576](https://github.com/keptn/lifecycle-toolkit/commit/4fcf576ef59182b883177a4f4be1dff8822b04ac))
+* update golang.org/x/exp digest to 8a7402a ([#3615](https://github.com/keptn/lifecycle-toolkit/issues/3615)) ([c3dfe86](https://github.com/keptn/lifecycle-toolkit/commit/c3dfe86c59880f6b88e63b6f9dbf0272c8a6989e))
+* update google.golang.org/grpc to v1.64.1 ([#3582](https://github.com/keptn/lifecycle-toolkit/issues/3582)) ([bb1070a](https://github.com/keptn/lifecycle-toolkit/commit/bb1070a760eb364bb8527f40c0206c0ee1bf7847))
+* update k8s to v1.29.7 ([#3652](https://github.com/keptn/lifecycle-toolkit/issues/3652)) ([f008022](https://github.com/keptn/lifecycle-toolkit/commit/f0080220d2afa84415f995d80b30433edcf9a9f4))
+* update kubernetes packages to v0.28.10 (patch) ([#3522](https://github.com/keptn/lifecycle-toolkit/issues/3522)) ([d9c1d70](https://github.com/keptn/lifecycle-toolkit/commit/d9c1d70eef3170c62b43dc2896df5b8d630af515))
+* update kubernetes packages to v0.28.11 (patch) ([#3554](https://github.com/keptn/lifecycle-toolkit/issues/3554)) ([b548057](https://github.com/keptn/lifecycle-toolkit/commit/b5480576c8eff5b00ce5d0269502e754ea6f97ec))
+* update kubernetes packages to v0.28.12 (patch) ([#3607](https://github.com/keptn/lifecycle-toolkit/issues/3607)) ([7792a1b](https://github.com/keptn/lifecycle-toolkit/commit/7792a1b85211d2e61cabaff4f640e6c299fddd12))
+* update module github.com/argoproj/argo-rollouts to v1.7.1 ([#3650](https://github.com/keptn/lifecycle-toolkit/issues/3650)) ([e6bd7d2](https://github.com/keptn/lifecycle-toolkit/commit/e6bd7d2648120d13774410ccf502abddb019199b))
+* update module github.com/go-logr/logr to v1.4.2 ([#3534](https://github.com/keptn/lifecycle-toolkit/issues/3534)) ([b9409f5](https://github.com/keptn/lifecycle-toolkit/commit/b9409f50b61cc2e7c7032abb6cbcc27fc5ef6c99))
+* update module github.com/onsi/ginkgo/v2 to v2.17.2 ([#3489](https://github.com/keptn/lifecycle-toolkit/issues/3489)) ([4a7e9cf](https://github.com/keptn/lifecycle-toolkit/commit/4a7e9cf80e083e35b39da7e8204ff1cfb5d842ae))
+* update module github.com/onsi/ginkgo/v2 to v2.17.3 ([#3512](https://github.com/keptn/lifecycle-toolkit/issues/3512)) ([c0d2afe](https://github.com/keptn/lifecycle-toolkit/commit/c0d2afe9eda7d73654538cef636439fb5168beef))
+* update module github.com/onsi/ginkgo/v2 to v2.19.1 ([#3636](https://github.com/keptn/lifecycle-toolkit/issues/3636)) ([0018af4](https://github.com/keptn/lifecycle-toolkit/commit/0018af46771d1d8a26356206d1a8e471a90613b8))
+* update module github.com/onsi/gomega to v1.33.0 ([#3468](https://github.com/keptn/lifecycle-toolkit/issues/3468)) ([e8ddfde](https://github.com/keptn/lifecycle-toolkit/commit/e8ddfdecd1a5fef73013d968a0913ac4aa9d744f))
+* update module github.com/onsi/gomega to v1.33.1 ([#3495](https://github.com/keptn/lifecycle-toolkit/issues/3495)) ([80caa18](https://github.com/keptn/lifecycle-toolkit/commit/80caa185c2909089c746c392f32dda54edd42dc3))
+* update module github.com/prometheus/client_golang to v1.19.1 ([#3517](https://github.com/keptn/lifecycle-toolkit/issues/3517)) ([63c593e](https://github.com/keptn/lifecycle-toolkit/commit/63c593eb93d609475711888518d757b34a07a64b))
+* update module golang.org/x/exp to v0.0.0-20240506185415-9bf2ced13842 ([#3507](https://github.com/keptn/lifecycle-toolkit/issues/3507)) ([0d2f645](https://github.com/keptn/lifecycle-toolkit/commit/0d2f6459f366e191f4a2792d97496d1c1d7e3965))
+* update module google.golang.org/grpc to v1.64.0 ([#3526](https://github.com/keptn/lifecycle-toolkit/issues/3526)) ([19a0f7c](https://github.com/keptn/lifecycle-toolkit/commit/19a0f7ce421ca204f7d2eb168a2487426c8220e4))
+* update module google.golang.org/grpc to v1.65.0 ([#3639](https://github.com/keptn/lifecycle-toolkit/issues/3639)) ([5fabe3b](https://github.com/keptn/lifecycle-toolkit/commit/5fabe3b0b627fb915ea4b7d9a670a7dae4360daf))
+* update module google.golang.org/protobuf to v1.34.0 ([#3496](https://github.com/keptn/lifecycle-toolkit/issues/3496)) ([5862111](https://github.com/keptn/lifecycle-toolkit/commit/586211185649f9542dd7782d551d1ad04e3c809f))
+* update module google.golang.org/protobuf to v1.34.1 ([#3518](https://github.com/keptn/lifecycle-toolkit/issues/3518)) ([6146e6d](https://github.com/keptn/lifecycle-toolkit/commit/6146e6d142b3e75e52730ef66ae76e6d60fab3bc))
+* update module google.golang.org/protobuf to v1.34.2 ([#3568](https://github.com/keptn/lifecycle-toolkit/issues/3568)) ([08b5684](https://github.com/keptn/lifecycle-toolkit/commit/08b568411f444461a30a286be5cc63f27f0bb8c2))
+* update module sigs.k8s.io/controller-runtime to v0.16.6 ([#3523](https://github.com/keptn/lifecycle-toolkit/issues/3523)) ([e044b51](https://github.com/keptn/lifecycle-toolkit/commit/e044b51c794b601edaa815855a8e4fb195f0842c))
+* update opentelemetry-go monorepo (minor) ([#3480](https://github.com/keptn/lifecycle-toolkit/issues/3480)) ([11fa477](https://github.com/keptn/lifecycle-toolkit/commit/11fa4771e478972f09a8c63eb240215dca23bcef))
+* update opentelemetry-go monorepo (minor) ([#3645](https://github.com/keptn/lifecycle-toolkit/issues/3645)) ([ebc0c29](https://github.com/keptn/lifecycle-toolkit/commit/ebc0c29fdea99acdc37bb4aaa6ea79be56d13cc6))
+* update python and deno runtimes ([#3655](https://github.com/keptn/lifecycle-toolkit/issues/3655)) ([41f1cbe](https://github.com/keptn/lifecycle-toolkit/commit/41f1cbebb8fd4ef85130bf7771bb599c17b88f5d))
+
 ## [1.0.0](https://github.com/keptn/lifecycle-toolkit/compare/lifecycle-operator-v0.9.2...lifecycle-operator-v1.0.0) (2024-04-24)
 
 

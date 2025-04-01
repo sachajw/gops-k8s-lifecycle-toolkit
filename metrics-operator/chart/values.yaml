@@ -104,7 +104,7 @@ podAnnotations: {}
 ## @param     kubernetesClusterDomain overrides cluster.local
 kubernetesClusterDomain: cluster.local
 customMetricsAPIService:
-## @param   customMetricsAPIService.enabled enable/disable the K8s APIService installation
+## @param   customMetricsAPIService.enabled enable/disable the installation of custom metrics API Service
   enabled: "true"
 
 ## @section Keptn Metrics Operator controller
@@ -140,7 +140,7 @@ image:
 ## @param   image.repository specify registry for manager image
   repository: keptn/metrics-operator
 ## @param   image.tag select tag for manager image
-  tag: v1.0.1 # x-release-please-version
+  tag: v2.1.0 # x-release-please-version
 ## @param   image.imagePullPolicy specify pull policy for the manager image. This overrides global values
   imagePullPolicy: ""
 ## @extra  livenessProbe custom livenessprobe for manager container

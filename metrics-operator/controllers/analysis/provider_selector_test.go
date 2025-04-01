@@ -246,12 +246,12 @@ func TestProvidersPool(t *testing.T) {
 
 func TestProvidersPool_StartProviders(t *testing.T) {
 
-	numJobs := 6
+	numJobs := 7
 	ctx, cancel := context.WithCancel(context.Background())
 	resChan := make(chan metricsapi.ProviderResult)
 	// Create a mock IObjectivesEvaluator, Client, and Logger for testing
 	mockEvaluator := &fake.IObjectivesEvaluatorMock{
-		EvaluateFunc: func(ctx context.Context, providerType string, obj chan metricstypes.ProviderRequest) {
+		EvaluateFunc: func(ctx context.Context, metricsProvider *metricsapi.KeptnMetricsProvider, obj chan metricstypes.ProviderRequest) {
 		},
 	}
 
@@ -273,7 +273,7 @@ func TestProvidersPool_StartProviders(t *testing.T) {
 	time.Sleep(time.Millisecond * 100)
 
 	// Assert the expected number of workers (goroutines) were started
-	require.Equal(t, 6, len(pool.providers))
+	require.Equal(t, 7, len(pool.providers))
 	require.Equal(t, numJobs, cap(pool.providers["prometheus"]))
 	// Stop the providers after testing
 	pool.StopProviders()

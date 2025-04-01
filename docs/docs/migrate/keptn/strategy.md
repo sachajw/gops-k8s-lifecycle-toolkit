@@ -79,8 +79,8 @@ Some key points:
 
 * Keptn provides an operator
   that can observe and orchestrate application-aware workload life cycles.
-  This operator leverages Kubernetes webhooks
-  and the Kubernetes scheduler
+  This operator leverages Kubernetes webhooks and
+  [Kubernetes scheduling gates](https://kubernetes.io/docs/concepts/scheduling-eviction/pod-scheduling-readiness/)
   to support pre- and post-deployment hooks.
   When the operator detects a new version of a service
   (implemented as a Kubernetes
@@ -269,7 +269,7 @@ Keptn v1
 [SLIs](https://v1.keptn.sh/docs/1.0.x/reference/files/sli/)
 (Service Level Indicators)
 represent queries from the data provider
-such as Prometheus, Thanos, Cortex, Dynatrace, or Datadog,
+such as Prometheus, Thanos, Cortex, Dynatrace, Elastic, or Datadog,
 which is configured as a Keptn integration.
 
 When migrating to Keptn, you need to define a

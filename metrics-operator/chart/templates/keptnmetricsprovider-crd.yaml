@@ -3,7 +3,7 @@ kind: CustomResourceDefinition
 metadata:
   name: keptnmetricsproviders.metrics.keptn.sh
   annotations:
-    controller-gen.kubebuilder.io/version: v0.14.0
+    controller-gen.kubebuilder.io/version: v0.16.5
     {{- with .Values.global.caInjectionAnnotations }}
     {{- toYaml . | nindent 4 }}
     {{- end }}
@@ -50,6 +50,11 @@ spec:
           spec:
             description: KeptnMetricsProviderSpec defines the desired state of KeptnMetricsProvider
             properties:
+              insecureSkipTlsVerify:
+                default: false
+                description: InsecureSkipTlsVerify skips verification of the tls certificate
+                  when fetching metrics
+                type: boolean
               secretKeyRef:
                 description: SecretKeyRef defines an optional secret for access credentials
                   to the metrics provider.
@@ -62,7 +67,6 @@ spec:
                     description: |-
                       Name of the referent.
                       More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
-                      TODO: Add other useful fields. apiVersion, kind, uid?
                     type: string
                   optional:
                     description: Specify whether the Secret or its key must be defined
@@ -77,8 +81,8 @@ spec:
                 type: string
               type:
                 description: Type represents the provider type. This can be one of
-                  cortex, datadog, dql, dynatrace, prometheus or thanos.
-                pattern: cortex|datadog|dql|dynatrace|prometheus|thanos
+                  cortex, datadog, dql, dynatrace, prometheus, elastic or thanos.
+                pattern: cortex|datadog|dql|dynatrace|prometheus|elastic|thanos
                 type: string
             required:
             - targetServer
@@ -128,7 +132,6 @@ spec:
                     description: |-
                       Name of the referent.
                       More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
-                      TODO: Add other useful fields. apiVersion, kind, uid?
                     type: string
                   optional:
                     description: Specify whether the Secret or its key must be defined
@@ -188,7 +191,6 @@ spec:
                     description: |-
                       Name of the referent.
                       More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
-                      TODO: Add other useful fields. apiVersion, kind, uid?
                     type: string
                   optional:
                     description: Specify whether the Secret or its key must be defined
@@ -255,7 +257,6 @@ spec:
                     description: |-
                       Name of the referent.
                       More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
-                      TODO: Add other useful fields. apiVersion, kind, uid?
                     type: string
                   optional:
                     description: Specify whether the Secret or its key must be defined

@@ -26,8 +26,8 @@ import (
 // KeptnMetricsProviderSpec defines the desired state of KeptnMetricsProvider
 type KeptnMetricsProviderSpec struct {
 	// +kubebuilder:validation:Optional
-	// +kubebuilder:validation:Pattern:=cortex|datadog|dql|dynatrace|prometheus|thanos
-	// Type represents the provider type. This can be one of cortex, datadog, dql, dynatrace, prometheus or thanos.
+	// +kubebuilder:validation:Pattern:=cortex|datadog|dql|dynatrace|prometheus|thanos|elastic
+	// Type represents the provider type. This can be one of cortex, datadog, dql, dynatrace, prometheus, elastic or thanos.
 	Type string `json:"type"`
 	// TargetServer defines URL (including port and protocol) at which the metrics provider is reachable.
 	TargetServer string `json:"targetServer"`
@@ -35,6 +35,10 @@ type KeptnMetricsProviderSpec struct {
 	// SecretKeyRef defines an optional secret for access credentials to the metrics provider.
 	// +optional
 	SecretKeyRef corev1.SecretKeySelector `json:"secretKeyRef,omitempty"`
+	// InsecureSkipTlsVerify skips verification of the tls certificate when fetching metrics
+	// +kubebuilder:default:=false
+	// +optional
+	InsecureSkipTlsVerify bool `json:"insecureSkipTlsVerify,omitempty"`
 }
 
 // +kubebuilder:object:root=true
